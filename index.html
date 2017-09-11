@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="imagetoolbar" content="no">
+		<meta name="msthemecompatible" content="no">
+		<meta name="cleartype" content="on">
+		<meta name="HandheldFriendly" content="True">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="format-detection" content="address=no">
+		<meta name="google" value="notranslate">
+		<meta name="theme-color" content="#ffffff">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<link sizes="57x57" href="apple-touch-icon-57x57.png" rel="apple-touch-icon">
+		<link sizes="114x114" href="apple-touch-icon-114x114.png" rel="apple-touch-icon">
+		<link sizes="72x72" href="apple-touch-icon-72x72.png" rel="apple-touch-icon">
+		<link sizes="144x144" href="apple-touch-icon-144x144.png" rel="apple-touch-icon">
+		<link sizes="60x60" href="apple-touch-icon-60x60.png" rel="apple-touch-icon">
+		<link sizes="120x120" href="apple-touch-icon-120x120.png" rel="apple-touch-icon">
+		<link sizes="76x76" href="apple-touch-icon-76x76.png" rel="apple-touch-icon">
+		<link sizes="152x152" href="apple-touch-icon-152x152.png" rel="apple-touch-icon">
+		<link sizes="180x180" href="apple-touch-icon-180x180.png" rel="apple-touch-icon">
+		<link sizes="192x192" href="favicon-192x192.png" rel="icon" type="image/png">
+		<link sizes="160x160" href="favicon-160x160.png" rel="icon" type="image/png">
+		<link sizes="96x96" href="favicon-96x96.png" rel="icon" type="image/png">
+		<link sizes="16x16" href="favicon-16x16.png" rel="icon" type="image/png">
+		<link sizes="32x32" href="favicon-32x32.png" rel="icon" type="image/png">
+		<link rel="manifest" href="manifest.json">
+		<meta name="application-name" content="">
+		<meta name="msapplication-tooltip" content="">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="/mstile-large.png">
+		<meta name="msapplication-starturl" content="https://csssr.github.io/csssr-project-template/">
+		<meta name="msapplication-tap-highlight" content="no">
+		<meta name="msapplication-square70x70logo" content="/mstile-small.png">
+		<meta name="msapplication-square150x150logo" content="/mstile-medium.png">
+		<meta name="msapplication-wide310x150logo" content="/mstile-wide.png">
+		<meta name="msapplication-square310x310logo" content="/mstile-large.png">
+		<title>CSSSR Project Template</title>
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<link href="assets/styles/app.min.css?v=457e390" rel="stylesheet">
+	</head>
+
+	<body class="page">
+		<header id="intro" class="header">
+			<div class="header__wrapper">
+				<div class="logo">
+					<a href="javascript:void(0)" class="logo__svg">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 197.21155 197.21638">
+							<path fill="#fff" d="m 85.639184,196.34986 c -8.98123,-1.10864 -26.37065,-6.72944 -34,-10.98986 C 5.3202742,159.49442 -12.920616,103.30115 9.6507445,56.009515 35.258674,2.3556684 103.14827,-16.573789 152.80625,16.093889 c 9.38469,6.173749 22.09904,18.888095 28.27279,28.272782 24.99997,38.002345 20.5737,88.354329 -10.7064,121.792849 -11.28666,12.06547 -24.35624,20.32658 -40.73346,25.74709 -15.42819,5.10639 -28.18874,6.39499 -43.999996,4.44325 z m 38.999996,-11.29283 c 15.41119,-5.00098 25.17271,-10.7626 36.3615,-21.46194 11.70973,-11.19749 18.92933,-22.87913 24.14107,-39.06134 2.17289,-6.7467 2.84123,-11.07839 3.2401,-21 0.69381,-17.257746 0.53639,-17.635282 -4.13864,-9.925231 -14.18515,23.394141 -35.33853,44.351601 -55.10403,54.593711 -13.43669,6.96263 -20.99782,8.83672 -35.499996,8.79897 -13.86683,-0.0361 -20.46689,-1.69669 -29.96055,-7.53821 l -4.95062,-3.04614 -9.55314,3.57807 c -5.25423,1.96794 -11.79922,4.09652 -14.54442,4.73019 -2.7452,0.63367 -4.99127,1.45101 -4.99127,1.81632 0,1.15794 13.31395,13.48867 18,16.67071 16.64977,11.30596 31.44785,15.43875 53.499996,14.94144 13.09158,-0.29524 16.08144,-0.68921 23.5,-3.09655 z m -15.06389,-40.11066 c 24.5486,-5.9367 53.58095,-31.17002 71.03294,-61.73794 l 5.10375,-8.939432 -1.67558,-5.117626 C 179.80634,56.231758 171.74636,43.74801 161.00068,33.472398 149.77427,22.737083 138.02714,15.903199 123.10324,11.425586 113.07832,8.4178144 91.918094,7.6951014 80.549574,9.9721954 c -9.02888,1.8084666 -20.57318,6.3638476 -29.72893,11.7310296 -7.32612,4.294636 -24.71735,21.68586 -29.01198,29.01198 -10.1557,17.324373 -13.6655198,31.384748 -12.9128295,51.728935 0.55535,15.01039 2.1565895,21.68909 8.4727695,35.3396 3.22555,6.97107 3.86775,7.75 6.38955,7.75 3.17959,0 17.452,-3.221 23.19236,-5.23405 l 3.81134,-1.33658 -3.16228,-3.96468 c -9.74195,-12.21388 -14.69959,-32.39019 -12.08115,-49.167051 4.49452,-28.797162 26.36933,-55.777779 51.44164,-63.448647 10.25576,-3.137749 22.140686,-2.373203 31.013976,1.9951 20.82199,10.250635 25.47632,36.131513 11.11579,61.810536 -9.52176,17.026522 -32.857026,39.632002 -52.200646,50.568142 -2.8875,1.63248 -5.25,3.31405 -5.25,3.73683 0,0.80005 5.95989,3.23154 12,4.89571 5.51806,1.52033 18.753026,1.29443 25.936106,-0.44268 z M 68.417704,131.63644 c 24.85553,-12.58662 49.568806,-37.101981 57.354776,-56.895433 1.80033,-4.576813 2.25706,-7.787016 2.30585,-16.207261 0.0532,-9.179719 -0.24448,-11.115491 -2.36739,-15.394909 -2.93145,-5.909281 -7.65775,-10.810081 -13.34832,-13.841145 -3.47734,-1.852196 -5.81707,-2.250871 -13.244467,-2.256775 -8.155809,-0.0065 -9.651259,0.303093 -15.592069,3.227744 -11.4838,5.653457 -20.43389,15.358172 -27.91171,30.265085 -10.8455,21.620318 -12.44987,42.106384 -4.58144,58.500004 2.86279,5.96452 9.76074,15.5 11.21269,15.5 0.24782,0 3.02526,-1.30379 6.17208,-2.89731 z"></path>
+						</svg>
+					</a>
+				</div>
+				<div class="menubtn">
+					<div class="menubtn__bar">
+						<nav class="menubtn__menu">
+							<ul class="menubtn__list">
+								<li class="menubtn__str">
+									<a href="#intro" class="menubtn__item">intro</a>
+								</li>
+								<li class="menubtn__str">
+									<a href="#about" class="menubtn__item">about</a>
+								</li>
+								<li class="menubtn__str">
+									<a href="#experience" class="menubtn__item">experience</a>
+								</li>
+								<li class="menubtn__str">
+									<a href="#resume" class="menubtn__item">resume</a>
+								</li>
+								<li class="menubtn__str">
+									<a href="#skills" class="menubtn__item">skills</a>
+								</li>
+								<li class="menubtn__str">
+									<a href="#portfolio" class="menubtn__item">portfolio</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+			<div class="title">
+				<div class="title__wrapper">
+					<h1 class="title__text">Alyona Goryainova</h1>
+					<p class="title__descr">Web producer / FRONT-END DEVELOPER</p>
+				</div>
+			</div>
+		</header>
+		<main class="main" role="main">
+			<section id="about" class="about">
+				<div class="section">
+					<div class="about__descr">
+						<h2 class="about__title">About </h2>
+						<div class="about__text">Let's get acquainted closer</div>
+					</div>
+					<div class="content">
+						<div class="content__about">
+							<h3 class="content__title">ABOUT ME</h3>
+							<p class="content__text content__text_highlighted">I'm a design-minded, detail oriented software engineer passionate about combining beautiful code with beautiful design.</p>
+							<p
+							 class="content__text">I love learning new and better ways to create seamless user experiences with clean, efficient, and scalable code.
+								I consider work an ongoing education, and I'm always looking for opportunities to work with those who are willing
+								to share their knowledge as much as I want to learn. At the end of the day, my primary goal is to create something
+								beautiful with people that bring out the best in me. </p>
+						</div>
+						<div class="content__pic">
+							<div class="content__wrapp">
+								<img src="assets/img/proto1.jpg" alt="photo" class="content__img" title="" />
+							</div>
+						</div>
+						<div class="content__info">
+							<h3 class="content__title">PERSONAL INFORMATION</h3>
+							<ul class="content__list">
+								<li class="content__str">
+									<div class="content__subtitle">Полное ФИО</div>
+									<div class="content__text">Горяинова Алена Эдуардовна</div>
+								</li>
+								<li class="content__str">
+									<div class="content__subtitle">Date of birth</div>
+									<div class="content__text">13.10.1993</div>
+								</li>
+								<li class="content__str">
+									<div class="content__subtitle">Skype</div>
+									<div class="content__text">
+										<a href="skype:cl49352009?add" class="content__link">cl49352009</a>
+									</div>
+								</li>
+								<li class="content__str">
+									<div class="content__subtitle">E-mail:</div>
+									<div class="content__text">
+										<a href="mailto:goryainova.alena@gmail.com" class="content__link">goryainova.alena@gmail.com</a>
+									</div>
+								</li>
+							</ul>
+							<div class="content__wrapper">
+								<div class="social">
+									<ul class="social__list">
+										<li class="social__str">
+											<a href="https://vk.com/id58682860" class="social__link">
+												<svg><use xlink:href="assets/images/icon.svg#icon_vk"></use></svg>
+											</a>
+										</li>
+										<li class="social__str">
+											<a href="https://github.com/elena-13" class="social__link">
+												<svg><use xlink:href="assets/images/icon.svg#icon_linkedin"></use></svg>
+											</a>
+										</li>
+										<li class="social__str">
+											<a href="https://www.facebook.com/profile.php?id=100010586790778" class="social__link">
+												<svg><use xlink:href="assets/images/icon.svg#icon_facebook"></use></svg>
+											</a>
+										</li>
+										<li class="social__str">
+											<a href="https://github.com/elena-13" class="social__link">
+												<svg><use xlink:href="assets/images/icon.svg#icon_github"></use></svg>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="experience" class="experience">
+				<div class="section">
+					<div class="skills__descr skills__descr_light">
+						<h2 class="skills__title">Experience </h2>
+						<div class="skills__text">My achievements</div>
+					</div>
+					<div class="section__wrapper">
+						<div class="timeline">
+							<div class="timeline__block">
+								<div class="timeline__content">
+									<h2 class="timeline__title">Dnipropetrovsk National University of Railway Transport named after Academician V. Lazaryan</h2>
+									<h3 class="timeline__company">
+										<a href="http://www.diit.edu.ua/sites/facultet-tk/kafedra-evm/index.php" class="timeline__link">Cyber Security </a>
+									</h3>
+									<p class="timeline__job-descr"> Obtained qualification of bachelor of science in information and communication system security. Studied methods
+										of protecting information systems and data in all forms – digital, analog and physical.</p>
+								</div>
+								<div class="timeline__img">
+									<div class="timeline__wrapp-img">
+										<svg><use xlink:href="assets/images/icon.svg#icon_mortarboard"></use></svg>
+									</div>
+								</div>
+								<span class="timeline__date">SEP 2011 - JUN 2015</span>
+							</div>
+							<div class="timeline__block">
+								<div class="timeline__content">
+									<h2 class="timeline__title">Wyższa Szkoła Biznesu - NLU</h2>
+									<h3 class="timeline__company">
+										<a href="http://old.wsb-nlu.edu.pl/en/study/management.html" class="timeline__link">Global Business Management </a>
+									</h3>
+									<p class="timeline__job-descr">Finished my master's degree in management. I have developed in the spheres of globalization and internationalization,
+										the expansion of global trade and the issues related to conducting business on a planetary scale.</p>
+								</div>
+								<div class="timeline__img">
+									<div class="timeline__wrapp-img">
+										<svg><use xlink:href="assets/images/icon.svg#icon_mortarboard"></use></svg>
+									</div>
+								</div>
+								<span class="timeline__date">OCT 2015 - JUL 2017</span>
+							</div>
+							<i class="timeline__arrow"> </i>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="resume">
+				<a id="resume" href="assets/files/CV.pdf" class="resume__resume">
+					<span class="resume__title">View my resume</span>
+					<img src="assets/img/download.svg" alt="download" class="resume__icon" title="" />
+				</a>
+			</div>
+			<div id="skills" class="skills">
+				<div class="section">
+					<div class="skills__descr skills__descr_dark">
+						<h2 class="skills__title">Skills </h2>
+						<div class="skills__text"> KNOWLEDGE</div>
+					</div>
+					<div class="section__wrapp">
+						<div class="block">
+							<div class="block__wrapp">
+								<h2 class="block__title">
+									<span class="block__icon">
+										<svg><use xlink:href="assets/images/icon.svg#icon_development"></use></svg>
+									</span>
+									<span class="block__text">development</span>
+								</h2>
+								<div class="block__skills">
+									<ul class="block__list">
+										<li class="block__circle">JavaScript </li>
+										<li class="block__circle">Pug(Jade)</li>
+										<li class="block__circle">SASS/Stylus</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="block">
+							<div class="block__wrapp">
+								<h2 class="block__title">
+									<span class="block__icon">
+										<svg><use xlink:href="assets/images/icon.svg#icon_drawing"></use></svg>
+									</span>
+									<span class="block__text">tools</span>
+								</h2>
+								<div class="block__skills">
+									<ul class="block__list">
+										<li class="block__circle">Gulp </li>
+										<li class="block__circle">Git+GitHub</li>
+										<li class="block__circle">Command Line</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="block">
+							<div class="block__wrapp">
+								<h2 class="block__title">
+									<span class="block__icon">
+										<svg><use xlink:href="assets/images/icon.svg#icon_search"></use></svg>
+									</span>
+									<span class="block__text">knowledge</span>
+								</h2>
+								<div class="block__skills">
+									<ul class="block__list">
+										<li class="block__circle">B1 English </li>
+										<li class="block__circle">SVG</li>
+										<li class="block__circle">BEM</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="portfolio" class="portfolio">
+				<div class="section">
+					<div class="skills__descr skills__descr_light">
+						<h2 class="skills__title">Portfolio</h2>
+						<div class="skills__text"> Some of My Work</div>
+					</div>
+					<div class="portfolio-item">
+						<div class="portfolio-item__wrapper">
+							<div class="portfolio-item__screenshots">
+								<img src="assets/img/insightlg.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_lg" title=""
+								/>
+								<img src="assets/img/insightmd.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_md"
+								 title="" />
+								<img src="assets/img/insightsm.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_sm"
+								 title="" />
+							</div>
+						</div>
+					</div>
+					<div class="portfolio-title">
+						<h3 class="portfolio-title__text">inSight</h3>
+						<div class="portfolio-title__buttons">
+							<a href="assets/files/inSight/manage.html" class="portfolio-title__view">View</a>
+							<a href="https://github.com/elena-13/inSight-frontend-/tree/master" class="portfolio-title__code">Code</a>
+						</div>
+					</div>
+					<p class="portfolio-descriprion">InSight is a system for recording employees' working hours using the Time Bank. The web app allows to use an effective
+						tool that automates the accounting of working hours of employees working at the computer. Via software, it is possible
+						to obtain statistical data on the work of literally every employee of the company. The web app for the account of working
+						hours disciplines employees, motivates them to use the working time more efficiently and ensures the growth of the
+						company's profit.</p>
+					<div class="used">
+						<ul class="used__list">
+							<li class="used__item">JavaScript</li>
+							<li class="used__item">jQuery</li>
+							<li class="used__item">Bootstrap </li>
+							<li class="used__item">SASS</li>
+							<li class="used__item">HTML</li>
+						</ul>
+					</div>
+					<div class="border"> </div>
+					<div class="portfolio-item">
+						<div class="portfolio-item__wrapper">
+							<div class="portfolio-item__screenshots">
+								<img src="assets/img/povernenialg.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_lg"
+								 title="" />
+								<img src="assets/img/poverneniamd.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_md"
+								 title="" />
+								<img src="assets/img/poverneniasm.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_sm"
+								 title="" />
+							</div>
+						</div>
+					</div>
+					<div class="portfolio-title">
+						<h3 class="portfolio-title__text">Povernennia</h3>
+						<div class="portfolio-title__buttons">
+							<a href="assets/files/povernennia/index.html" class="portfolio-title__view">View</a>
+							<a href="https://github.com/elena-13/Povernennia" class="portfolio-title__code">Code</a>
+						</div>
+					</div>
+					<p class="portfolio-descriprion">Povernennia is a website Ukrainian agro company. 'Povernennia' is a private family owned enterprise with an area of
+						7 hectares of cultivated land. The website contains up-to-date information about company activities. The main purpose
+						of creating the website is an aspiration to share experience gained. This was my first comertial website I built in
+						2015. It's relied heavily on Bootstrap. Since then, I think my web development and design skills have expanded immensely.</p>
+					<div
+					 class="used">
+						<ul class="used__list">
+							<li class="used__item">JavaScript</li>
+							<li class="used__item">jQuery</li>
+							<li class="used__item">Bootstrap </li>
+							<li class="used__item">SASS</li>
+							<li class="used__item">HTML</li>
+						</ul>
+				</div>
+				<div class="border"> </div>
+				<div class="portfolio-item">
+					<div class="portfolio-item__wrapper">
+						<div class="portfolio-item__screenshots">
+							<img src="assets/img/designlg.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_lg" title=""
+							/>
+							<img src="assets/img/designmd.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_md" title=""
+							/>
+							<img src="assets/img/designsm.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_sm" title=""
+							/>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio-title">
+					<h3 class="portfolio-title__text">Ocean Design</h3>
+					<div class="portfolio-title__buttons">
+						<a href="assets/files/oceanDesign/index.html" class="portfolio-title__view">View</a>
+						<a href="https://github.com/elena-13/OceanDesign" class="portfolio-title__code">Code</a>
+					</div>
+				</div>
+				<p class="portfolio-descriprion">This is just a favorite design I made for fun. I was interested in practis my skills in responsive design by using fluid
+					grid, at least I learned a few things!</p>
+				<div class="used">
+					<ul class="used__list">
+						<li class="used__item">SASS</li>
+						<li class="used__item">HTML</li>
+						<li class="used__item">JavaScript </li>
+						<li class="used__item">jQuery</li>
+						<li class="used__item">Bootstrap</li>
+					</ul>
+				</div>
+				<div class="border"> </div>
+				<div class="portfolio-item">
+					<div class="portfolio-item__wrapper">
+						<div class="portfolio-item__screenshots">
+							<img src="assets/img/resumelg.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_lg" title=""
+							/>
+							<img src="assets/img/resumemd.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_md" title=""
+							/>
+							<img src="assets/img/resumesm.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_sm" title=""
+							/>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio-title">
+					<h3 class="portfolio-title__text">Resume</h3>
+					<div class="portfolio-title__buttons">
+						<a href="assets/files/resume/index.html" class="portfolio-title__view">View</a>
+						<a href="https://github.com/elena-13/resume" class="portfolio-title__code">Code</a>
+					</div>
+				</div>
+				<p class="portfolio-descriprion">This is my testing task to CSSSR. I push myself forward further after have Operated this task. During the operating I
+					learned a new few things!</p>
+				<div class="used">
+					<ul class="used__list">
+						<li class="used__item">Jade</li>
+						<li class="used__item">Stylus</li>
+						<li class="used__item">BEM </li>
+						<li class="used__item">SVG</li>
+						<li class="used__item">flexbox</li>
+					</ul>
+				</div>
+				<div class="border"> </div>
+			</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__wrapp">
+				<div class="footer__sowrapp">
+					<div class="social">
+						<ul class="social__list">
+							<li class="social__str">
+								<a href="https://vk.com/id58682860" class="social__link">
+									<svg><use xlink:href="assets/images/icon.svg#icon_vk"></use></svg>
+								</a>
+							</li>
+							<li class="social__str">
+								<a href="https://github.com/elena-13" class="social__link">
+									<svg><use xlink:href="assets/images/icon.svg#icon_linkedin"></use></svg>
+								</a>
+							</li>
+							<li class="social__str">
+								<a href="https://www.facebook.com/profile.php?id=100010586790778" class="social__link">
+									<svg><use xlink:href="assets/images/icon.svg#icon_facebook"></use></svg>
+								</a>
+							</li>
+							<li class="social__str">
+								<a href="https://github.com/elena-13" class="social__link">
+									<svg><use xlink:href="assets/images/icon.svg#icon_github"></use></svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__wrapper">
+					<p class="footer__copyright">@ Alona Horiainova 2017</p>
+				</div>
+			</div>
+		</footer>
+		<script src="assets/scripts/app.min.js?v=5f617b4"></script>
+	</body>
+
+</html>

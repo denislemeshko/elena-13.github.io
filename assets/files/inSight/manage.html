@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>InSight/Manager</title>
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+
+<body>
+	<header class="main-head">
+		<div class="top-line">
+			<div class="container">
+				<a class="logo"><img src="img/logo.png" alt="inSight"></a>
+				<div class="modal-window">
+					<img src="img/min-user-photo.jpg" alt="user-photo">
+					<div class="wrapp-modal">
+						<h2>Artem Avdoshkin</h2>
+						<button class="btn" type="button" onclick="location.href='profile.html'"><span>View Profile</span></button>
+					</div>
+					<div class="sign-out">
+						<a href="#">Sign out</a>
+					</div>
+				</div>
+				<div class="user-info-min">
+					<img src="img/min-user-photo.jpg" alt="user-photo">
+					<a href="#" class="top-link">Artem Avdoshkin</a>
+				</div>
+			</div>
+		</div>
+		<section class="bg-line" style="background-image: url(./img/bg-roads.jpg);">
+			<div class="container">
+				<div class="user-info">
+					<img src="img/min-user-photo.jpg" alt="user-photo">
+					<h2>Artem Avdoshkin</h2>
+				</div>
+			</div>
+		</section>
+	</header>
+	<section>
+		<div class="tabs">
+			<div class="tabs-header">
+				<div class="border"></div>
+				<ul class="main-tabs">
+					<li class="active main-tabs-manager"  ripple="rippple" ripple-color="#fff"><a href='#tab-1' tab-id='1'>Statistic</a></li>
+					<li class="main-tabs-manager" ripple="rippple" ripple-color="#fff"><a href='#tab-2' tab-id='2'>Settings</a></li>
+				</ul>
+			</div>
+			<div class="tabs-content">
+				<div id="Statistic" class="tab active" tab-id='1'>
+					<div class="statistic-head">
+						<div class="tabs-second">
+								<ul class="tab-group">
+									<li class="active"><a href="#day">Day</a></li>
+									<li><a href="#week">Week</a></li>
+									<li><a href="#month">Month</a></li>
+								</ul>
+								<div class="tab-content-second">
+									<div id="day" class="day-statistic">
+										<div class="wrapp-productivity">
+											<div class="drop-down-calendar">
+												<div class="wrapp-day">
+													<h3>Thu, Apr 13</h3>
+													<span>2017</span>
+												</div>
+												<div id="calendar-third" class="calendar">
+													<div class="calendar-header clearfix">
+														<button class="switch-month switch-left"><i class="fa fa-chevron-left"></i></button></button>
+														<h3 class="month-name"></h3>
+														<button class="switch-month switch-right"><i class="fa fa-chevron-right"></i></button>
+													</div>
+													<div class="calendar-weekdays"></div>
+													<div class="calendar-content"></div>
+												</div>	
+											</div>
+											<div class="wrapp-rating">
+												<div class="container">
+													<div class="rating">
+															<p>Scott Masterson</p>
+															<strong>89%</strong>
+															<div class="border-right"></div>
+															<strong class="lowest-rate">62%</strong>
+															<p>John Due</p>
+													</div>	
+												</div>
+											</div>
+										</div>
+										<section class="list day-statistic-manager">
+											<div class="tbl-header-manager">
+												<table cellpadding="0" cellspacing="0" border="0">
+													<thead>
+														<tr>
+															<th style="width: 30%;">Name</th>
+															<th style="width: 20%;">Worked time</th>
+															<th style="width: 50%;">Activity during the day</th>
+														</tr>
+													</thead>	
+												</table>
+											</div>
+											<div class="tbl-content-manager">
+												<table cellpadding="0" cellspacing="0" border="0">
+													<tbody>
+														<tr>
+															<td>Scott Masterson</td>
+															<td>7:35</td>
+															<td><canvas class="managerBarChart" width="350" height="40"></canvas></td>
+														</tr>
+														<tr>
+															<td>Sheldon Cooper</td>
+															<td>6:55</td>
+															<td><canvas class="managerBarChart" width="350" height="40"></canvas></td>
+														</tr>
+														<tr>
+															<td>John Due</td>
+															<td>6:55</td>
+															<td><canvas class="managerBarChart" width="350" height="40"></canvas></td>
+														</tr>
+														<tr>
+															<td>Tonny Stark</td>
+															<td>6:55</td>
+															<td><canvas class="managerBarChart" width="350" height="40"></canvas></td>
+														</tr>
+														<tr>
+															<td>Scott Masterson</td>
+															<td>7:35</td>
+															<td><canvas class="managerBarChart" width="350" height="40"></canvas></td>
+														</tr>
+														<tr>
+															<td>Sheldon Cooper</td>
+															<td>6:55</td>
+															<td><canvas class="managerBarChart" width="350" height="40"></canvas></td>
+														</tr>
+														<tr>
+															<td>John Due</td>
+															<td>6:55</td>
+															<td><canvas class="managerBarChart" width="350" height="40"></canvas></td>
+														</tr>
+														<tr>
+															<td>Tonny Stark</td>
+															<td>6:55</td>
+															<td><canvas class="managerBarChart" width="350" height="40"></canvas></td>
+														</tr>
+														<tr>
+															<td>Scott Masterson</td>
+															<td>7:35</td>
+															<td><canvas class="managerBarChart" width="350" height="40"></canvas></td>
+														</tr>
+														<tr>
+															<td>Sheldon Cooper</td>
+															<td>6:55</td>
+															<td><canvas class="managerBarChart" width="350" height="40"></canvas></td>
+														</tr>
+														<tr>
+															<td>John Due</td>
+															<td>6:55</td>
+															<td><canvas class="managerBarChart" width="350" height="40"></canvas></td>
+														</tr>
+														<tr>
+															<td>Tonny Stark</td>
+															<td>6:55</td>
+															<td><canvas class="managerBarChart" width="350" height="40"></canvas></td>
+														</tr>
+														
+													</tbody>
+												</table>
+											</div>
+										</section>
+									</div>
+									<div id="week" class="week-statistic">
+										<div class="wrapp-productivity">
+											<div class="drop-down-calendar">
+												<div class="wrapp-day">
+													<h3>Thu, Apr 13</h3>
+													<span>2017</span>
+												</div>
+												<div id="calendar-second" class="calendar">
+													<div class="calendar-header clearfix">
+														<button class="switch-month switch-left"><i class="fa fa-chevron-left"></i></button></button>
+														<h3 class="month-name"></h3>
+														<button class="switch-month switch-right"><i class="fa fa-chevron-right"></i></button>
+													</div>
+													<div class="calendar-weekdays"></div>
+													<div class="calendar-content"></div>
+												</div>	
+											</div>
+											<div class="wrapp-rating">
+												<div class="container">
+													<div class="rating">
+															<p>Scott Masterson</p>
+															<strong>89%</strong>
+															<div class="border-right"></div>
+															<strong class="lowest-rate">62%</strong>
+															<p>John Due</p>
+													</div>	
+												</div>
+											</div>	
+										</div>
+										<section class="week-statistic-manager">
+											<div class="tbl-header-manager">
+												<table cellpadding="0" cellspacing="0" border="0">
+													<thead>
+														<tr>
+															<th style="width: 30%;">Name</th>
+															<th style="width: 10%;">Worked time</th>
+															<th style="width: 8.6%;">Monday</th>
+															<th style="width: 8.6%;">Tuesday</th>
+															<th style="width: 8.6%;">Wednesday</th>
+															<th style="width: 8.6%;">Thursday</th>
+															<th style="width: 8.6%;">Friday</th>
+															<th style="width: 8.6%;">Saturday</th>
+															<th style="width: 8.6%;">Sunday</th>
+														</tr>
+													</thead>	
+												</table>
+											</div>
+											<div class="tbl-content-manager">
+												<table cellpadding="0" cellspacing="0" border="0">
+													<tbody>
+														<tr>
+															<td>Scott Masterson</td>
+															<td>7:35</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="80"></div>
+																	<div class="i-mini-chart" data-value-percent="20"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="90"></div>
+																	<div class="i-mini-chart" data-value-percent="10"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="60"></div>
+																	<div class="i-mini-chart" data-value-percent="40"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="50"></div>
+																	<div class="i-mini-chart" data-value-percent="50"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="80"></div>
+																	<div class="i-mini-chart" data-value-percent="20"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="95"></div>
+																	<div class="i-mini-chart" data-value-percent="5"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="10"></div>
+																	<div class="i-mini-chart" data-value-percent="90"></div>
+																</div>
+															</td>
+															
+
+														</tr>
+														<tr>
+															<td>Sheldon Cooper</td>
+															<td>6:55</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="90"></div>
+																	<div class="i-mini-chart" data-value-percent="10"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="70"></div>
+																	<div class="i-mini-chart" data-value-percent="30"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="85"></div>
+																	<div class="i-mini-chart" data-value-percent="15"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="90"></div>
+																	<div class="i-mini-chart" data-value-percent="10"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="75"></div>
+																	<div class="i-mini-chart" data-value-percent="25"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="5"></div>
+																	<div class="i-mini-chart" data-value-percent="95"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="30"></div>
+																	<div class="i-mini-chart" data-value-percent="70"></div>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>John Due</td>
+															<td>6:55</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="80"></div>
+																	<div class="i-mini-chart" data-value-percent="20"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="90"></div>
+																	<div class="i-mini-chart" data-value-percent="10"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="60"></div>
+																	<div class="i-mini-chart" data-value-percent="40"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="50"></div>
+																	<div class="i-mini-chart" data-value-percent="50"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="80"></div>
+																	<div class="i-mini-chart" data-value-percent="20"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="95"></div>
+																	<div class="i-mini-chart" data-value-percent="5"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="10"></div>
+																	<div class="i-mini-chart" data-value-percent="90"></div>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>Tonny Stark</td>
+															<td>6:55</td>
+																														<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="90"></div>
+																	<div class="i-mini-chart" data-value-percent="10"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="70"></div>
+																	<div class="i-mini-chart" data-value-percent="30"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="85"></div>
+																	<div class="i-mini-chart" data-value-percent="15"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="90"></div>
+																	<div class="i-mini-chart" data-value-percent="10"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="75"></div>
+																	<div class="i-mini-chart" data-value-percent="25"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="5"></div>
+																	<div class="i-mini-chart" data-value-percent="95"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="30"></div>
+																	<div class="i-mini-chart" data-value-percent="70"></div>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>Scott Masterson</td>
+															<td>7:35</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="80"></div>
+																	<div class="i-mini-chart" data-value-percent="20"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="90"></div>
+																	<div class="i-mini-chart" data-value-percent="10"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="60"></div>
+																	<div class="i-mini-chart" data-value-percent="40"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="50"></div>
+																	<div class="i-mini-chart" data-value-percent="50"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="80"></div>
+																	<div class="i-mini-chart" data-value-percent="20"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="95"></div>
+																	<div class="i-mini-chart" data-value-percent="5"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="10"></div>
+																	<div class="i-mini-chart" data-value-percent="90"></div>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>Sheldon Cooper</td>
+															<td>6:55</td>
+																														<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="90"></div>
+																	<div class="i-mini-chart" data-value-percent="10"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="70"></div>
+																	<div class="i-mini-chart" data-value-percent="30"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="85"></div>
+																	<div class="i-mini-chart" data-value-percent="15"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="90"></div>
+																	<div class="i-mini-chart" data-value-percent="10"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="75"></div>
+																	<div class="i-mini-chart" data-value-percent="25"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="5"></div>
+																	<div class="i-mini-chart" data-value-percent="95"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="30"></div>
+																	<div class="i-mini-chart" data-value-percent="70"></div>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>John Due</td>
+															<td>6:55</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="80"></div>
+																	<div class="i-mini-chart" data-value-percent="20"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="90"></div>
+																	<div class="i-mini-chart" data-value-percent="10"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="60"></div>
+																	<div class="i-mini-chart" data-value-percent="40"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="50"></div>
+																	<div class="i-mini-chart" data-value-percent="50"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="80"></div>
+																	<div class="i-mini-chart" data-value-percent="20"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="95"></div>
+																	<div class="i-mini-chart" data-value-percent="5"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="10"></div>
+																	<div class="i-mini-chart" data-value-percent="90"></div>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>Scott Masterson</td>
+															<td>7:35</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="80"></div>
+																	<div class="i-mini-chart" data-value-percent="20"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="90"></div>
+																	<div class="i-mini-chart" data-value-percent="10"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="60"></div>
+																	<div class="i-mini-chart" data-value-percent="40"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="50"></div>
+																	<div class="i-mini-chart" data-value-percent="50"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="80"></div>
+																	<div class="i-mini-chart" data-value-percent="20"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="95"></div>
+																	<div class="i-mini-chart" data-value-percent="5"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="10"></div>
+																	<div class="i-mini-chart" data-value-percent="90"></div>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>Sheldon Cooper</td>
+															<td>6:55</td>
+																														<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="90"></div>
+																	<div class="i-mini-chart" data-value-percent="10"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="70"></div>
+																	<div class="i-mini-chart" data-value-percent="30"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="85"></div>
+																	<div class="i-mini-chart" data-value-percent="15"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="90"></div>
+																	<div class="i-mini-chart" data-value-percent="10"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="75"></div>
+																	<div class="i-mini-chart" data-value-percent="25"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="5"></div>
+																	<div class="i-mini-chart" data-value-percent="95"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="30"></div>
+																	<div class="i-mini-chart" data-value-percent="70"></div>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>John Due</td>
+															<td>6:55</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="80"></div>
+																	<div class="i-mini-chart" data-value-percent="20"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="90"></div>
+																	<div class="i-mini-chart" data-value-percent="10"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="60"></div>
+																	<div class="i-mini-chart" data-value-percent="40"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="50"></div>
+																	<div class="i-mini-chart" data-value-percent="50"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="80"></div>
+																	<div class="i-mini-chart" data-value-percent="20"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="95"></div>
+																	<div class="i-mini-chart" data-value-percent="5"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="10"></div>
+																	<div class="i-mini-chart" data-value-percent="90"></div>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>Tonny Stark</td>
+															<td>6:55</td>
+																														<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="90"></div>
+																	<div class="i-mini-chart" data-value-percent="10"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="70"></div>
+																	<div class="i-mini-chart" data-value-percent="30"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="85"></div>
+																	<div class="i-mini-chart" data-value-percent="15"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="90"></div>
+																	<div class="i-mini-chart" data-value-percent="10"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="75"></div>
+																	<div class="i-mini-chart" data-value-percent="25"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="5"></div>
+																	<div class="i-mini-chart" data-value-percent="95"></div>
+																</div>
+															</td>
+															<td>
+																<div class="mini-chart">
+																	<div  class="p-mini-chart" data-value-percent="30"></div>
+																	<div class="i-mini-chart" data-value-percent="70"></div>
+																</div>
+															</td>
+														</tr>
+														
+													</tbody>
+												</table>
+											</div>
+										</section>
+									</div>
+									<div id="month" class="month-statistic">
+										<div class="wrapp-productivity">
+											<div class="drop-down-calendar">
+												<div class="wrapp-day">
+													<h3>Thu, Apr 13</h3>
+													<span>2017</span>
+												</div>
+												<div id="calendar-first" class="calendar">
+													<div class="calendar-header clearfix">
+														<button class="switch-month switch-left"><i class="fa fa-chevron-left"></i></button></button>
+														<h3 class="month-name"></h3>
+														<button class="switch-month switch-right"><i class="fa fa-chevron-right"></i></button>
+													</div>
+													<div class="calendar-weekdays"></div>
+													<div class="calendar-content"></div>
+												</div>	
+											</div>
+											<div class="wrapp-rating">
+												<div class="container">
+													<div class="rating">
+															<p>Scott Masterson</p>
+															<strong>89%</strong>
+															<div class="border-right"></div>
+															<strong class="lowest-rate">62%</strong>
+															<p>John Due</p>
+													</div>	
+												</div>
+											</div>
+											<div class="container">
+									<div class="row">
+										<canvas id="barMonthChartManager" width="1200" height="500"></canvas>
+									</div>
+								</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+						
+							
+				
+				
+				
+					
+					</div>
+				</div>	
+				<div id="Settings" class="tab" tab-id='2'>
+					<section class="timetable-setting">
+						<div class="container">
+							<h2 class="manager-title">TIMETABLE</h2>
+							<div class="header-card">
+								<div>
+									<div><p>Working days</p></div>
+									<div><p>Duration</p></div>
+								</div>
+							</div>	
+							<div class="content-card">
+								<div>
+									<div>
+										<label  class="label-checkbox">
+											<input type="checkbox" class="checkbox" name="week_days" value="monday" checked>
+											Monday
+										</label>
+									</div>
+									<div><input type="text" name="timepicker" class="timepicker" name="quantity_worked_hours"></div>
+								</div>
+								<div>
+									<div>
+										<label  class="label-checkbox">
+											<input type="checkbox" class="checkbox" name="week_days" value="monday" checked>
+											Tuesday
+										</label>
+									</div>
+									<div><input type="text" name="timepicker" class="timepicker" name="quantity_worked_hours"></div>
+								</div>
+								<div>
+									<div>
+										<label  class="label-checkbox">
+											<input type="checkbox" class="checkbox" name="week_days" value="monday" checked>
+											Wednesday
+										</label>
+									</div>
+									<div><input type="text" name="timepicker" class="timepicker" name="quantity_worked_hours"></div>
+								</div>
+								<div>
+									<div>
+										<label  class="label-checkbox">
+											<input type="checkbox" class="checkbox" name="week_days" value="monday" checked>
+											Thursday
+										</label>
+									</div>
+									<div><input type="text" name="timepicker" class="timepicker" name="quantity_worked_hours"></div>
+								</div>
+								<div>
+									<div>
+										<label  class="label-checkbox">
+											<input type="checkbox" class="checkbox" name="week_days" value="monday" checked>
+											Friday
+										</label>
+									</div>
+									<div><input type="text" name="timepicker" class="timepicker" name="quantity_worked_hours"></div>
+								</div>
+								<div>
+									<div>
+										<label  class="label-checkbox">
+											<input type="checkbox" class="checkbox" name="week_days" value="monday" >
+											Saturday
+										</label>
+									</div>
+									<div><input type="text" name="timepicker" class="timepicker" name="quantity_worked_hours"></div>
+								</div>
+								<div>
+									<div>
+										<label  class="label-checkbox">
+											<input type="checkbox" class="checkbox" name="week_days" value="monday" >
+											Sunday
+										</label>
+									</div>
+									<div><input type="text" name="timepicker" class="timepicker" name="quantity_worked_hours"></div>
+								</div>
+							</div>
+							<button type="button" class="btn">UPDATE SETTINGS</button>
+						</div>
+					</section>
+					<section class="manage-timebank">
+						<div class="container-fluid">
+							<div class="row no-gutter">
+								<div class="wrapp-title">
+									<h2 class="manager-title">TIME  BANK MANAGEMENT</h2>
+								</div>
+								<div class="col-md-6">
+									<div class="sending-hours">
+										<input class="basic-input" type="text" name="employeename" placeholder="Name of employee" required>
+										<input class="basic-input" type="text" name="employeelastname" placeholder="Surname of employee" required>
+										<input class="basic-input" type="text" name="email" placeholder="Amount of hours" required>
+										<button class="btn" type="button"><span>SEND</span></button>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="sending-hours-transuctions">
+										<div class="executed-transaction">
+											<strong>2:00 h</strong>
+											<p>Scott Masterson</p>
+											<span>13.10.17</span>
+										</div>
+										<div class="executed-transaction">
+											<strong>2:00 h</strong>
+											<p>Scott Masterson</p>
+											<span>13.10.17</span>
+										</div>
+										<div class="executed-transaction">
+											<strong>2:00 h</strong>
+											<p>Scott Masterson</p>
+											<span>13.10.17</span>
+										</div>
+										<div class="executed-transaction">
+											<strong>2:00 h</strong>
+											<p>Scott Masterson</p>
+											<span>13.10.17</span>
+										</div>
+										<div class="executed-transaction">
+											<strong>2:00 h</strong>
+											<p>Scott Masterson</p>
+											<span>13.10.17</span>
+										</div>
+
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+					</section>
+					
+				</div>	
+			</div>	
+			<!-- <footer style="height: 60px; background-color: #3EA6A4;">
+					
+				</footer>	 -->
+		</div>
+	</section>
+
+
+
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
+
+</body>
+
+</html>
