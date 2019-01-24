@@ -15,42 +15,22 @@
 		<meta name="theme-color" content="#ffffff">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-		<link sizes="57x57" href="/apple-touch-icon-57x57.png" rel="apple-touch-icon">
-		<link sizes="114x114" href="/apple-touch-icon-114x114.png" rel="apple-touch-icon">
-		<link sizes="72x72" href="/apple-touch-icon-72x72.png" rel="apple-touch-icon">
-		<link sizes="144x144" href="/apple-touch-icon-144x144.png" rel="apple-touch-icon">
-		<link sizes="60x60" href="/apple-touch-icon-60x60.png" rel="apple-touch-icon">
-		<link sizes="120x120" href="/apple-touch-icon-120x120.png" rel="apple-touch-icon">
-		<link sizes="76x76" href="/apple-touch-icon-76x76.png" rel="apple-touch-icon">
-		<link sizes="152x152" href="/apple-touch-icon-152x152.png" rel="apple-touch-icon">
-		<link sizes="180x180" href="/apple-touch-icon-180x180.png" rel="apple-touch-icon">
-		<link sizes="192x192" href="/favicon-192x192.png" rel="icon" type="image/png">
-		<link sizes="160x160" href="/favicon-160x160.png" rel="icon" type="image/png">
-		<link sizes="96x96" href="/favicon-96x96.png" rel="icon" type="image/png">
-		<link sizes="16x16" href="/favicon-16x16.png" rel="icon" type="image/png">
-		<link sizes="32x32" href="/favicon-32x32.png" rel="icon" type="image/png">
 		<link rel="manifest" href="/manifest.json">
-		<meta name="application-name" content="">
-		<meta name="msapplication-tooltip" content="">
-		<meta name="msapplication-TileColor" content="#ffffff">
-		<meta name="msapplication-TileImage" content="/mstile-large.png">
-		<meta name="msapplication-starturl" content="https://csssr.github.io/csssr-project-template/">
-		<meta name="msapplication-tap-highlight" content="no">
-		<meta name="msapplication-square70x70logo" content="/mstile-small.png">
-		<meta name="msapplication-square150x150logo" content="/mstile-medium.png">
-		<meta name="msapplication-wide310x150logo" content="/mstile-wide.png">
-		<meta name="msapplication-square310x310logo" content="/mstile-large.png">
 		<title>Alyona Goryainova Portfolio</title>
 		<meta name="description" content="">
 		<meta name="keywords" content="">
 		<link rel="subresource" href="assets/img/bg-header.jpg">
 		<link rel="preload" href="assets/fonts/RalewayBold/RalewayBold.woff" as="font" type="font/woff" crossorigin>
-		<link href="assets/styles/app.min.css" rel="stylesheet">
+		<link href="assets/styles/app.min.css?v=87c57e1" rel="stylesheet">
 	</head>
 
 	<body class="page">
 		<header id="intro" class="header">
-			<img src="assets/img/bg-header.jpg" alt="bd" class="header__img" title="" />
+			<picture>
+				<source type="image/webp" srcset="assets/img/bg-header.webp" alt="bd" class="header__img" />
+				<source type="image/jpg" srcset="assets/img/bg-header.jpg" alt="bd" class="header__img" />
+				<img src="assets/img/bg-header.jpg" alt="bd" class="header__img" title="" />
+			</picture>
 			<div class="header__wrapper">
 				<div class="logo">
 					<a href="javascript:void(0)" class="logo__svg">
@@ -110,7 +90,11 @@
 						</div>
 						<div class="content__pic">
 							<div class="content__wrapp">
-								<img src="assets/img/my_photo.jpg" alt="photo" class="content__img" title="" />
+								<picture>
+									<source type="image/webp" srcset="assets/img/my_photo.webp" alt="bmed" class="content__img" />
+									<source type="image/jpg" srcset="assets/img/my_photo.jpg" alt="me" class="content__img" />
+									<img src="assets/img/my_photo.jpg" alt="me" class="content__img" title="" />
+								</picture>
 							</div>
 						</div>
 						<div class="content__info">
@@ -261,12 +245,24 @@
 					<div class="portfolio-item">
 						<div class="portfolio-item__wrapper">
 							<div class="portfolio-item__screenshots">
-								<img src="assets/img/cotrip_public/cotrip_lg.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_lg"
-								 title="" />
-								<img src="assets/img/cotrip_public/cotrip_md.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_md"
-								 title="" />
-								<img src="assets/img/cotrip_public/cotrip_sm.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_sm"
-								 title="" />
+								<picture>
+									<source type="image/webp" srcset="assets/img/cotrip_public/cotrip_lg.webp" alt="desctop-screenshot" />
+									<source type="image/png" srcset="assets/img/cotrip_public/cotrip_lg.png" alt="desctop-screenshot" />
+									<img src="assets/img/cotrip_public/cotrip_lg.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_lg"
+									 title="" />
+								</picture>
+								<picture>
+									<source type="image/webp" srcset="assets/img/cotrip_public/cotrip_md.webp" alt="desctop-screenshot" />
+									<source type="image/png" srcset="assets/img/cotrip_public/cotrip_md.png" alt="desctop-screenshot" />
+									<img src="assets/img/cotrip_public/cotrip_md.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_md"
+									 title="" />
+								</picture>
+								<picture>
+									<source type="image/webp" srcset="assets/img/cotrip_public/cotrip_sm.webp" alt="desctop-screenshot" />
+									<source type="image/png" srcset="assets/img/cotrip_public/cotrip_sm.png" alt="desctop-screenshot" />
+									<img src="assets/img/cotrip_public/cotrip_sm.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_sm"
+									 title="" />
+								</picture>
 							</div>
 						</div>
 					</div>
@@ -274,7 +270,7 @@
 						<h3 class="portfolio-title__text">Cotrip</h3>
 						<div class="portfolio-title__buttons">
 							<a href="https://cotrip.ru" class="portfolio-title__view">View</a>
-							<a href="https://github.com/elena-13/cotrip_public" class="portfolio-title__code">Code</a>
+							<a href="https://cotrip.ru" class="portfolio-title__code">Code</a>
 						</div>
 					</div>
 					<p class="portfolio-descriprion">Cotrip is a tourist platform for traveler and tourist travel agency wich allows to create tour routs.</p>
@@ -291,12 +287,24 @@
 					<div class="portfolio-item">
 						<div class="portfolio-item__wrapper">
 							<div class="portfolio-item__screenshots">
-								<img src="assets/img/cotrip_admin/cotrip_lg.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_lg"
-								 title="" />
-								<img src="assets/img/cotrip_admin/cotrip_md.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_md"
-								 title="" />
-								<img src="assets/img/cotrip_admin/cotrip_sm.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_sm"
-								 title="" />
+								<picture>
+									<source type="image/webp" srcset="assets/img/cotrip_admin/cotrip_lg.webp" alt="desctop-screenshot" />
+									<source type="image/png" srcset="assets/img/cotrip_admin/cotrip_lg.png" alt="desctop-screenshot" />
+									<img src="assets/img/cotrip_admin/cotrip_lg.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_lg"
+									 title="" />
+								</picture>
+								<picture>
+									<source type="image/webp" srcset="assets/img/cotrip_admin/cotrip_md.webp" alt="desctop-screenshot" />
+									<source type="image/png" srcset="assets/img/cotrip_admin/cotrip_md.png" alt="desctop-screenshot" />
+									<img src="assets/img/cotrip_admin/cotrip_md.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_md"
+									 title="" />
+								</picture>
+								<picture>
+									<source type="image/webp" srcset="assets/img/cotrip_admin/cotrip_sm.webp" alt="desctop-screenshot" />
+									<source type="image/png" srcset="assets/img/cotrip_admin/cotrip_sm.png" alt="desctop-screenshot" />
+									<img src="assets/img/cotrip_admin/cotrip_sm.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_sm"
+									 title="" />
+								</picture>
 							</div>
 						</div>
 					</div>
@@ -304,7 +312,7 @@
 						<h3 class="portfolio-title__text">Cotrip (SPA)</h3>
 						<div class="portfolio-title__buttons">
 							<a href="https://cotrip.ru" class="portfolio-title__view">View</a>
-							<a href="https://github.com/elena-13/cotrip_admin" class="portfolio-title__code">Code</a>
+							<a href="https://cotrip.ru" class="portfolio-title__code">Code</a>
 						</div>
 					</div>
 					<p class="portfolio-descriprion">Cotrip administration panel is a web app that allows for access and manipulation of data within the UI of the site.
@@ -323,12 +331,24 @@
 					<div class="portfolio-item">
 						<div class="portfolio-item__wrapper">
 							<div class="portfolio-item__screenshots">
-								<img src="assets/img/fabiohomelg.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_lg"
-								 title="" />
-								<img src="assets/img/fabiohomemd.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_md"
-								 title="" />
-								<img src="assets/img/fabiohomesm.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_sm"
-								 title="" />
+								<picture>
+									<source type="image/webp" srcset="assets/img/fabiohomelg.webp" alt="desctop-screenshot" />
+									<source type="image/png" srcset="assets/img/fabiohomelg.png" alt="desctop-screenshot" />
+									<img src="assets/img/fabiohomelg.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_lg"
+									 title="" />
+								</picture>
+								<picture>
+									<source type="image/webp" srcset="assets/img/fabiohomemd.webp" alt="desctop-screenshot" />
+									<source type="image/png" srcset="assets/img/fabiohomemd.png" alt="desctop-screenshot" />
+									<img src="assets/img/fabiohomemd.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_md"
+									 title="" />
+								</picture>
+								<picture>
+									<source type="image/webp" srcset="assets/img/fabiohomesm.webp" alt="desctop-screenshot" />
+									<source type="image/png" srcset="assets/img/fabiohomesm.png" alt="desctop-screenshot" />
+									<img src="assets/img/fabiohomesm.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_sm"
+									 title="" />
+								</picture>
 							</div>
 						</div>
 					</div>
@@ -353,12 +373,24 @@
 					<div class="portfolio-item">
 						<div class="portfolio-item__wrapper">
 							<div class="portfolio-item__screenshots">
-								<img src="assets/img/insightlg.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_lg" title=""
-								/>
-								<img src="assets/img/insightmd.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_md"
-								 title="" />
-								<img src="assets/img/insightsm.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_sm"
-								 title="" />
+								<picture>
+									<source type="image/webp" srcset="assets/img/insightlg.webp" alt="desctop-screenshot" />
+									<source type="image/png" srcset="assets/img/insightlg.png" alt="desctop-screenshot" />
+									<img src="assets/img/insightlg.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_lg"
+									 title="" />
+								</picture>
+								<picture>
+									<source type="image/webp" srcset="assets/img/insightmd.webp" alt="desctop-screenshot" />
+									<source type="image/png" srcset="assets/img/insightmd.png" alt="desctop-screenshot" />
+									<img src="assets/img/insightmd.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_md"
+									 title="" />
+								</picture>
+								<picture>
+									<source type="image/webp" srcset="assets/img/insightsm.webp" alt="desctop-screenshot" />
+									<source type="image/png" srcset="assets/img/insightsm.png" alt="desctop-screenshot" />
+									<img src="assets/img/insightsm.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_sm"
+									 title="" />
+								</picture>
 							</div>
 						</div>
 					</div>
@@ -387,12 +419,24 @@
 					<div class="portfolio-item">
 						<div class="portfolio-item__wrapper">
 							<div class="portfolio-item__screenshots">
-								<img src="assets/img/povernenialg.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_lg"
-								 title="" />
-								<img src="assets/img/poverneniamd.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_md"
-								 title="" />
-								<img src="assets/img/poverneniasm.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_sm"
-								 title="" />
+								<picture>
+									<source type="image/webp" srcset="assets/img/povernenialg.webp" alt="desctop-screenshot" />
+									<source type="image/png" srcset="assets/img/povernenialg.png" alt="desctop-screenshot" />
+									<img src="assets/img/povernenialg.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_lg"
+									 title="" />
+								</picture>
+								<picture>
+									<source type="image/webp" srcset="assets/img/poverneniamd.webp" alt="desctop-screenshot" />
+									<source type="image/png" srcset="assets/img/poverneniamd.png" alt="desctop-screenshot" />
+									<img src="assets/img/poverneniamd.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_md"
+									 title="" />
+								</picture>
+								<picture>
+									<source type="image/webp" srcset="assets/img/poverneniasm.webp" alt="desctop-screenshot" />
+									<source type="image/png" srcset="assets/img/poverneniasm.png" alt="desctop-screenshot" />
+									<img src="assets/img/poverneniasm.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_sm"
+									 title="" />
+								</picture>
 							</div>
 						</div>
 					</div>
@@ -421,12 +465,24 @@
 				<div class="portfolio-item">
 					<div class="portfolio-item__wrapper">
 						<div class="portfolio-item__screenshots">
-							<img src="assets/img/designlg.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_lg" title=""
-							/>
-							<img src="assets/img/designmd.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_md" title=""
-							/>
-							<img src="assets/img/designsm.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_sm" title=""
-							/>
+							<picture>
+								<source type="image/webp" srcset="assets/img/designlg.webp" alt="desctop-screenshot" />
+								<source type="image/png" srcset="assets/img/designlg.png" alt="desctop-screenshot" />
+								<img src="assets/img/designlg.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_lg" title=""
+								/>
+							</picture>
+							<picture>
+								<source type="image/webp" srcset="assets/img/designmd.webp" alt="desctop-screenshot" />
+								<source type="image/png" srcset="assets/img/designmd.png" alt="desctop-screenshot" />
+								<img src="assets/img/designmd.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_md" title=""
+								/>
+							</picture>
+							<picture>
+								<source type="image/webp" srcset="assets/img/designsm.webp" alt="desctop-screenshot" />
+								<source type="image/png" srcset="assets/img/designsm.png" alt="desctop-screenshot" />
+								<img src="assets/img/designsm.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_sm" title=""
+								/>
+							</picture>
 						</div>
 					</div>
 				</div>
@@ -491,7 +547,7 @@
 				</div>
 			</div>
 		</footer>
-		<script src="assets/scripts/app.min.js"></script>
+		<script src="assets/scripts/app.min.js?v=018cafc"></script>
 	</body>
 
 </html>
