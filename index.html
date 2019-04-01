@@ -15,15 +15,15 @@
 		<meta name="theme-color" content="#ffffff">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-		<link sizes="57x57" href="apple-touch-icon-57x57.png" rel="apple-touch-icon">
-		<link sizes="114x114" href="apple-touch-icon-114x114.png" rel="apple-touch-icon">
-		<link sizes="72x72" href="apple-touch-icon-72x72.png" rel="apple-touch-icon">
-		<link sizes="144x144" href="apple-touch-icon-144x144.png" rel="apple-touch-icon">
-		<link sizes="60x60" href="apple-touch-icon-60x60.png" rel="apple-touch-icon">
-		<link sizes="120x120" href="apple-touch-icon-120x120.png" rel="apple-touch-icon">
-		<link sizes="76x76" href="apple-touch-icon-76x76.png" rel="apple-touch-icon">
-		<link sizes="152x152" href="apple-touch-icon-152x152.png" rel="apple-touch-icon">
-		<link sizes="180x180" href="apple-touch-icon-180x180.png" rel="apple-touch-icon">
+		<link sizes="57x57" href="/apple-touch-icon-57x57.png" rel="apple-touch-icon">
+		<link sizes="114x114" href="/apple-touch-icon-114x114.png" rel="apple-touch-icon">
+		<link sizes="72x72" href="/apple-touch-icon-72x72.png" rel="apple-touch-icon">
+		<link sizes="144x144" href="/apple-touch-icon-144x144.png" rel="apple-touch-icon">
+		<link sizes="60x60" href="/apple-touch-icon-60x60.png" rel="apple-touch-icon">
+		<link sizes="120x120" href="/apple-touch-icon-120x120.png" rel="apple-touch-icon">
+		<link sizes="76x76" href="/apple-touch-icon-76x76.png" rel="apple-touch-icon">
+		<link sizes="152x152" href="/apple-touch-icon-152x152.png" rel="apple-touch-icon">
+		<link sizes="180x180" href="/apple-touch-icon-180x180.png" rel="apple-touch-icon">
 		<link sizes="192x192" href="favicon-192x192.png" rel="icon" type="image/png">
 		<link sizes="160x160" href="favicon-160x160.png" rel="icon" type="image/png">
 		<link sizes="96x96" href="favicon-96x96.png" rel="icon" type="image/png">
@@ -45,15 +45,15 @@
 		<meta name="keywords" content="">
 		<link rel="subresource" href="assets/img/bg-header.jpg">
 		<link rel="preload" href="assets/fonts/RalewayBold/RalewayBold.woff" as="font" type="font/woff" crossorigin>
-		<link href="assets/styles/app.min.css?v=87c57e1" rel="stylesheet">
+		<link href="assets/styles/app.min.css" rel="stylesheet">
 	</head>
 
 	<body class="page">
 		<header id="intro" class="header">
 			<picture>
-				<source type="image/webp" srcset="assets/img/bg-header.webp" class="header__img" />
-				<source type="image/jpg" srcset="assets/img/bg-header.jpg" class="header__img" />
-				<img src="assets/img/bg-header.jpg" alt="bg" class="header__img" title="" />
+				<source type="image/webp" srcset="assets/img/bg/bg-header.webp" class="header__img" />
+				<source type="image/jpg" srcset="assets/img/bg/bg-header.jpg" class="header__img" />
+				<img src="assets/img/bg/bg-header.jpg" alt="bg" class="header__img" title="" />
 			</picture>
 			<div class="header__wrapper">
 				<div class="logo">
@@ -91,7 +91,7 @@
 			<div class="title">
 				<div class="title__wrapper">
 					<h1 class="title__text">Alyona Goryainova</h1>
-					<p class="title__descr">Web producer / FRONT-END DEVELOPER</p>
+					<p class="title__descr">FRONT-END DEVELOPER</p>
 				</div>
 			</div>
 		</header>
@@ -99,7 +99,7 @@
 			<section id="about" class="about">
 				<div class="section">
 					<div class="about__descr">
-						<h2 class="about__title">About </h2>
+						<h2 class="about__title">About</h2>
 						<div class="about__text">Let's get acquainted closer</div>
 					</div>
 					<div class="content">
@@ -110,14 +110,14 @@
 							 class="content__text">I love learning new and better ways to create seamless user experiences with clean, efficient, and scalable code.
 								I consider work an ongoing education, and I'm always looking for opportunities to work with those who are willing
 								to share their knowledge as much as I want to learn. At the end of the day, my primary goal is to create something
-								beautiful with people that bring out the best in me. </p>
+								beautiful with people that bring out the best in me.</p>
 						</div>
 						<div class="content__pic">
 							<div class="content__wrapp">
 								<picture>
-									<source type="image/webp" srcset="assets/img/my_photo.webp" alt="bmed" class="content__img" />
-									<source type="image/jpg" srcset="assets/img/my_photo.jpg" alt="me" class="content__img" />
-									<img src="assets/img/my_photo.jpg" alt="me" class="content__img" title="" />
+									<source type="image/webp" srcset="assets/img/myPhoto/my_photo.webp" class="content__img" />
+									<source type="image/jpg" srcset="assets/img/myPhoto/my_photo.jpg" class="content__img" />
+									<img src="assets/img/myPhoto/my_photo.jpg" alt="me" class="content__img" title="" />
 								</picture>
 							</div>
 						</div>
@@ -126,7 +126,7 @@
 							<ul class="content__list">
 								<li class="content__str">
 									<div class="content__subtitle">Full name</div>
-									<div class="content__text">Горяинова Алена Эдуардовна</div>
+									<div class="content__text">Alyona Goryainova</div>
 								</li>
 								<li class="content__str">
 									<div class="content__subtitle">Date of birth</div>
@@ -135,13 +135,13 @@
 								<li class="content__str">
 									<div class="content__subtitle">Skype</div>
 									<div class="content__text">
-										<a href="skype:cl49352009?add" class="content__link">cl49352009</a>
+										<a href="skype:cl49352009?add" target="_blank" class="content__link">cl49352009</a>
 									</div>
 								</li>
 								<li class="content__str">
 									<div class="content__subtitle">E-mail:</div>
 									<div class="content__text">
-										<a href="mailto:goryainova.alena@gmail.com" class="content__link">goryainova.alena@gmail.com</a>
+										<a href="mailto:goryainova.alena@gmail.com" target="_blank" class="content__link">goryainova.alena@gmail.com</a>
 									</div>
 								</li>
 							</ul>
@@ -184,7 +184,7 @@
 			<section id="experience" class="experience">
 				<div class="section">
 					<div class="skills__descr skills__descr_light">
-						<h2 class="skills__title">Experience </h2>
+						<h2 class="skills__title">Experience</h2>
 						<div class="skills__text">My achievements</div>
 					</div>
 					<div class="section__wrapper">
@@ -193,7 +193,7 @@
 								<div class="timeline__content">
 									<h2 class="timeline__title">Dnipropetrovsk National University of Railway Transport named after Academician V. Lazaryan</h2>
 									<h3 class="timeline__company">
-										<a href="http://www.diit.edu.ua/sites/facultet-tk/kafedra-evm/index.php" class="timeline__link">Cyber Security </a>
+										<a href="http://www.diit.edu.ua/sites/facultet-tk/kafedra-evm/index.php" target="_blank" class="timeline__link">Cyber Security</a>
 									</h3>
 									<p class="timeline__job-descr">Obtained qualification of bachelor of science in information and communication system security. Studied methods
 										of protecting information systems and data in all forms – digital, analog and physical.</p>
@@ -209,7 +209,7 @@
 								<div class="timeline__content">
 									<h2 class="timeline__title">Wyższa Szkoła Biznesu - NLU</h2>
 									<h3 class="timeline__company">
-										<a href="http://old.wsb-nlu.edu.pl/en/study/management.html" class="timeline__link">Global Business Management </a>
+										<a href="http://old.wsb-nlu.edu.pl/en/study/management.html" target="_blank" class="timeline__link">Global Business Management</a>
 									</h3>
 									<p class="timeline__job-descr">Finished my master's degree in management. I have developed in the spheres of globalization and internationalization,
 										the expansion of global trade and the issues related to conducting business on a planetary scale.</p>
@@ -225,7 +225,7 @@
 								<div class="timeline__content">
 									<h2 class="timeline__title">ACC company</h2>
 									<h3 class="timeline__company">
-										<a href="https://moikrug.ru/companies/9fa8c72b-fc34-4457-889f-13b3d2bf2e9d" class="timeline__link">Front-end developer </a>
+										<a href="https://moikrug.ru/companies/9fa8c72b-fc34-4457-889f-13b3d2bf2e9d" target="_blank" class="timeline__link">Front-end developer</a>
 									</h3>
 									<p class="timeline__job-descr">Implemented new travel platform and new features for existing project. Successfully developed a user interface of
 										a complex single-page application. Worked effectively with backend developers to ensure software solutions. Modified
@@ -238,7 +238,7 @@
 								</div>
 								<span class="timeline__date">OCT 2017 - JAN 2019</span>
 							</div>
-							<i class="timeline__arrow"> </i>
+							<i class="timeline__arrow"></i>
 						</div>
 					</div>
 				</div>
@@ -293,8 +293,8 @@
 					<div class="portfolio-title">
 						<h3 class="portfolio-title__text">Cotrip</h3>
 						<div class="portfolio-title__buttons">
-							<a href="https://cotrip.ru" class="portfolio-title__view">View</a>
-							<a href="https://cotrip.ru" class="portfolio-title__code">Code</a>
+							<a href="https://cotrip.ru" target="_blank" class="portfolio-title__view">View</a>
+							<a href="https://github.com/elena-13/cotrip_public" target="_blank" class="portfolio-title__code">Code</a>
 						</div>
 					</div>
 					<p class="portfolio-descriprion">Cotrip is a tourist platform for traveler and tourist travel agency wich allows to create tour routs.</p>
@@ -335,8 +335,8 @@
 					<div class="portfolio-title">
 						<h3 class="portfolio-title__text">Cotrip (SPA)</h3>
 						<div class="portfolio-title__buttons">
-							<a href="https://cotrip.ru" class="portfolio-title__view">View</a>
-							<a href="https://cotrip.ru" class="portfolio-title__code">Code</a>
+							<a href="https://cotrip.ru" target="_blank" class="portfolio-title__view">View</a>
+							<a href="https://github.com/elena-13/cotrip_admin" target="_blank" class="portfolio-title__code">Code</a>
 						</div>
 					</div>
 					<p class="portfolio-descriprion">Cotrip administration panel is a web app that allows for access and manipulation of data within the UI of the site.
@@ -356,21 +356,21 @@
 						<div class="portfolio-item__wrapper">
 							<div class="portfolio-item__screenshots">
 								<picture>
-									<source type="image/webp" srcset="assets/img/fabiohomelg.webp" />
-									<source type="image/png" srcset="assets/img/fabiohomelg.png" />
-									<img src="assets/img/fabiohomelg.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_lg"
+									<source type="image/webp" srcset="assets/img/fabiohome/fabiohomelg.webp" />
+									<source type="image/png" srcset="assets/img/fabiohome/fabiohomelg.png" />
+									<img src="assets/img/fabiohome/fabiohomelg.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_lg"
 									 title="" />
 								</picture>
 								<picture>
-									<source type="image/webp" srcset="assets/img/fabiohomemd.webp" />
-									<source type="image/png" srcset="assets/img/fabiohomemd.png" />
-									<img src="assets/img/fabiohomemd.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_md"
+									<source type="image/webp" srcset="assets/img/fabiohome/fabiohomemd.webp" />
+									<source type="image/png" srcset="assets/img/fabiohome/fabiohomemd.png" />
+									<img src="assets/img/fabiohome/fabiohomemd.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_md"
 									 title="" />
 								</picture>
 								<picture>
-									<source type="image/webp" srcset="assets/img/fabiohomesm.webp" />
-									<source type="image/png" srcset="assets/img/fabiohomesm.png" />
-									<img src="assets/img/fabiohomesm.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_sm"
+									<source type="image/webp" srcset="assets/img/fabiohome/fabiohomesm.webp" />
+									<source type="image/png" srcset="assets/img/fabiohome/fabiohomesm.png" />
+									<img src="assets/img/fabiohome/fabiohomesm.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_sm"
 									 title="" />
 								</picture>
 							</div>
@@ -379,8 +379,8 @@
 					<div class="portfolio-title">
 						<h3 class="portfolio-title__text">Fabiohome</h3>
 						<div class="portfolio-title__buttons">
-							<a href="http://fabiohome.ru" class="portfolio-title__view">View</a>
-							<a href="" class="portfolio-title__code">Code</a>
+							<a href="http://fabiohome.ru" target="_blank" class="portfolio-title__view">View</a>
+							<a href="http://fabiohome.ru" target="_blank" class="portfolio-title__code">Code</a>
 						</div>
 					</div>
 					<p class="portfolio-descriprion">Fabiohome is a shop selling designer furniture, interior items and accessories.</p>
@@ -398,21 +398,21 @@
 						<div class="portfolio-item__wrapper">
 							<div class="portfolio-item__screenshots">
 								<picture>
-									<source type="image/webp" srcset="assets/img/insightlg.webp" />
-									<source type="image/png" srcset="assets/img/insightlg.png" />
-									<img src="assets/img/insightlg.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_lg"
+									<source type="image/webp" srcset="assets/img/insight/insightlg.webp" />
+									<source type="image/png" srcset="assets/img/insight/insightlg.png" />
+									<img src="assets/img/insight/insightlg.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_lg"
 									 title="" />
 								</picture>
 								<picture>
-									<source type="image/webp" srcset="assets/img/insightmd.webp" />
-									<source type="image/png" srcset="assets/img/insightmd.png" />
-									<img src="assets/img/insightmd.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_md"
+									<source type="image/webp" srcset="assets/img/insight/insightmd.webp" />
+									<source type="image/png" srcset="assets/img/insight/insightmd.png" />
+									<img src="assets/img/insight/insightmd.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_md"
 									 title="" />
 								</picture>
 								<picture>
-									<source type="image/webp" srcset="assets/img/insightsm.webp" />
-									<source type="image/png" srcset="assets/img/insightsm.png" />
-									<img src="assets/img/insightsm.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_sm"
+									<source type="image/webp" srcset="assets/img/insight/insightsm.webp" />
+									<source type="image/png" srcset="assets/img/insight/insightsm.png" />
+									<img src="assets/img/insight/insightsm.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_sm"
 									 title="" />
 								</picture>
 							</div>
@@ -421,8 +421,8 @@
 					<div class="portfolio-title">
 						<h3 class="portfolio-title__text">inSight</h3>
 						<div class="portfolio-title__buttons">
-							<a href="assets/files/inSight/manage.html" class="portfolio-title__view">View</a>
-							<a href="https://github.com/elena-13/inSight-frontend-/tree/master" class="portfolio-title__code">Code</a>
+							<a href="assets/files/inSight/manage.html" target="_blank" class="portfolio-title__view">View</a>
+							<a href="https://github.com/elena-13/inSight-frontend-/tree/master" target="_blank" class="portfolio-title__code">Code</a>
 						</div>
 					</div>
 					<p class="portfolio-descriprion">InSight is a system for recording employees' working hours using the Time Bank. The web app allows to use an effective
@@ -444,21 +444,21 @@
 						<div class="portfolio-item__wrapper">
 							<div class="portfolio-item__screenshots">
 								<picture>
-									<source type="image/webp" srcset="assets/img/povernenialg.webp" />
-									<source type="image/png" srcset="assets/img/povernenialg.png" />
-									<img src="assets/img/povernenialg.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_lg"
+									<source type="image/webp" srcset="assets/img/povernenia/povernenialg.webp" />
+									<source type="image/png" srcset="assets/img/povernenia/povernenialg.png" />
+									<img src="assets/img/povernenia/povernenialg.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_lg"
 									 title="" />
 								</picture>
 								<picture>
-									<source type="image/webp" srcset="assets/img/poverneniamd.webp" />
-									<source type="image/png" srcset="assets/img/poverneniamd.png" />
-									<img src="assets/img/poverneniamd.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_md"
+									<source type="image/webp" srcset="assets/img/povernenia/poverneniamd.webp" />
+									<source type="image/png" srcset="assets/img/povernenia/poverneniamd.png" />
+									<img src="assets/img/povernenia/poverneniamd.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_md"
 									 title="" />
 								</picture>
 								<picture>
-									<source type="image/webp" srcset="assets/img/poverneniasm.webp" />
-									<source type="image/png" srcset="assets/img/poverneniasm.png" />
-									<img src="assets/img/poverneniasm.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_sm"
+									<source type="image/webp" srcset="assets/img/povernenia/poverneniasm.webp" />
+									<source type="image/png" srcset="assets/img/povernenia/poverneniasm.png" />
+									<img src="assets/img/povernenia/poverneniasm.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_sm"
 									 title="" />
 								</picture>
 							</div>
@@ -467,8 +467,8 @@
 					<div class="portfolio-title">
 						<h3 class="portfolio-title__text">Povernennia</h3>
 						<div class="portfolio-title__buttons">
-							<a href="assets/files/povernennia/index.html" class="portfolio-title__view">View</a>
-							<a href="https://github.com/elena-13/Povernennia" class="portfolio-title__code">Code</a>
+							<a href="assets/files/povernennia/index.html" target="_blank" class="portfolio-title__view">View</a>
+							<a href="https://github.com/elena-13/Povernennia" target="_blank" class="portfolio-title__code">Code</a>
 						</div>
 					</div>
 					<p class="portfolio-descriprion">Povernennia is a website Ukrainian agro company. 'Povernennia' is a private family owned enterprise with an area of
@@ -490,22 +490,22 @@
 					<div class="portfolio-item__wrapper">
 						<div class="portfolio-item__screenshots">
 							<picture>
-								<source type="image/webp" srcset="assets/img/designlg.webp" />
-								<source type="image/png" srcset="assets/img/designlg.png" />
-								<img src="assets/img/designlg.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_lg" title=""
-								/>
+								<source type="image/webp" srcset="assets/img/design/designlg.webp" />
+								<source type="image/png" srcset="assets/img/design/designlg.png" />
+								<img src="assets/img/design/designlg.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_lg"
+								 title="" />
 							</picture>
 							<picture>
-								<source type="image/webp" srcset="assets/img/designmd.webp" />
-								<source type="image/png" srcset="assets/img/designmd.png" />
-								<img src="assets/img/designmd.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_md" title=""
-								/>
+								<source type="image/webp" srcset="assets/img/design/designmd.webp" />
+								<source type="image/png" srcset="assets/img/design/designmd.png" />
+								<img src="assets/img/design/designmd.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_md"
+								 title="" />
 							</picture>
 							<picture>
-								<source type="image/webp" srcset="assets/img/designsm.webp" />
-								<source type="image/png" srcset="assets/img/designsm.png" />
-								<img src="assets/img/designsm.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_sm" title=""
-								/>
+								<source type="image/webp" srcset="assets/img/design/designsm.webp" />
+								<source type="image/png" srcset="assets/img/design/designsm.png" />
+								<img src="assets/img/design/designsm.png" alt="desctop-screenshot" class="portfolio-item__img portfolio-item__img_sm"
+								 title="" />
 							</picture>
 						</div>
 					</div>
@@ -513,8 +513,8 @@
 				<div class="portfolio-title">
 					<h3 class="portfolio-title__text">Ocean Design</h3>
 					<div class="portfolio-title__buttons">
-						<a href="assets/files/oceanDesign/index.html" class="portfolio-title__view">View</a>
-						<a href="https://github.com/elena-13/OceanDesign" class="portfolio-title__code">Code</a>
+						<a href="assets/files/oceanDesign/index.html" target="_blank" class="portfolio-title__view">View</a>
+						<a href="https://github.com/elena-13/OceanDesign" target="_blank" class="portfolio-title__code">Code</a>
 					</div>
 				</div>
 				<p class="portfolio-descriprion">This is just a favorite design I made for fun. I was interested in practis my skills in responsive design by using fluid
@@ -571,7 +571,7 @@
 				</div>
 			</div>
 		</footer>
-		<script src="assets/scripts/app.min.js?v=018cafc"></script>
+		<script src="assets/scripts/app.min.js"></script>
 	</body>
 
 </html>
